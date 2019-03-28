@@ -30,7 +30,8 @@ class School
   end
 
   def sort
-    @roster.values.each do |name1, name2|
+    @roster.values.map do |array|
+      array.map do |name1, name2|
       [name1, name2].sort
     end
     @roster

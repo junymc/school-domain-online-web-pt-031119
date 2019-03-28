@@ -30,7 +30,9 @@ class School
   end
 
   def sort
-    @roster.values.sort
+    @roster.values.each do |name1, name2|
+      [name1, name2].sort
+    end
     @roster
     binding.pry
 

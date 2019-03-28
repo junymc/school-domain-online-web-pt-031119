@@ -24,6 +24,8 @@ class School
   end
 
   def grade(num)
+    grade_array = []
+    grade_array << roster[num] 
   end
 
   def sort

@@ -27,7 +27,6 @@ class School
   def grade(num)
     grade_array = []
     grade_array << roster[num]
-    grade.flatten
   end
 
   def sort

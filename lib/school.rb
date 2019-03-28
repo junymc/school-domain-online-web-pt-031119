@@ -36,22 +36,22 @@ class School
  #    end
  #  end
 
-  def sort
-    @roster.values.map do |array|
-      array.map do |names|
-        array.sort!
-      end
+#   def sort
+#     @roster.values.map do |array|
+#       array.map do |names|
+#         array.sort!
+#       end
+#     end
+#     @roster
+# end
+
+
+
+    sorted_array = @roster.sort  #=> [[7, [name, name]], [9, [name, name]]]
+    sorted_array.each do |element|
+      @roster[element[0]] = element[1].sort #@roster[key] = value
     end
     @roster
-end
 
-
-
-  #   sorted_array = @roster.sort  #=> [[7, [name, name]], [9, [name, name]]]
-  #   sorted_array.each do |element|
-  #     @roster[element[0]] = element[1].sort #@roster[key] = value
-  #   end
-  #   @roster
-  #
-  # end
+  end
 end

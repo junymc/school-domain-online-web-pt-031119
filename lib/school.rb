@@ -16,16 +16,15 @@ class School
   # end
 
   def add_student(name, grade)
-    @roster.each do |grade, name|
-      if @roster[grade] == []
-      @roster[grade] << name
+    if @roster[grade] == []
+       @roster[grade] << name
       end
     end
   end
 
   def grade(num)
     grade_array = []
-    grade_array << roster[num] 
+    grade_array << roster[num]
   end
 
   def sort

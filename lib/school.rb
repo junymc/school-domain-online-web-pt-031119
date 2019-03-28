@@ -30,20 +30,20 @@ class School
   end
 
 
- # def sort
- #   @roster.each do |key, value|
- #      value.sort!
- #    end
- #  end
+ def sort
+   @roster.each do |key, value|
+      value.sort!
+   end
+ end
 
-  def sort
-    @roster.values.map do |array|
-      array.map do |names|
-        array.sort!
-      end
-    end
-    @roster
-end
+  # def sort
+  #   @roster.values.map do |array|
+  #     array.map do |names|
+  #       array.sort!
+  #     end
+  #   end
+  #   @roster
+  # end
 
 
 # def sort

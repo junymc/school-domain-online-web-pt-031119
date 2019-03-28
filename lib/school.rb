@@ -1,3 +1,4 @@
+require 'pry'
 class School
 
   attr_accessor :roster
@@ -31,6 +32,7 @@ class School
   def sort
     @roster.values.sort
     @roster
+    binding.pry
 
 
 

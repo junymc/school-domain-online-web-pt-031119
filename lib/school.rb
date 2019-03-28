@@ -50,6 +50,7 @@ class School
     sorted_array = @roster.sort  #=> [[7, [name, name]], [9, [name, name]]]
     sorted_array.each do |element|
       @roster[element[0]] = element[1].sort #@roster[key] = value
+      binding.pry
     end
     @roster
 

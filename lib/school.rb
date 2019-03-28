@@ -32,7 +32,6 @@ class School
   def sort
     @roster.values.map do |array|
       array.map do |names|
-        binding.pry
         array.sort
       end
     end

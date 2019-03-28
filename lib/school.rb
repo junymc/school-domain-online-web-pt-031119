@@ -31,7 +31,7 @@ class School
   def sort
     @roster.values.sort
     @roster
-  
+
 
 
   #   sorted_array = @roster.sort  #=> [[7, [name, name]], [9, [name, name]]]
@@ -41,4 +41,4 @@ class School
   #   @roster
   #
   # end
-end# code here!
+end

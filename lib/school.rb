@@ -19,7 +19,7 @@ class School
     roster.each do |grade, name|
       if roster[grade] = []
       roster[grade] << name
-    end
+      end
     end
   end
 

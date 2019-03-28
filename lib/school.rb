@@ -29,8 +29,9 @@ class School
   end
 
   def sort
-    @roster.values.sort
-    @roster
+    sorted_by_key = @roster.keys.sort
+    sorted_by_values = sorted_by_key.values.sort
+    sorted_by_values
 
 
 

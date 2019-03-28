@@ -29,6 +29,11 @@ class School
   end
 
   def sort
+    sorted_array = @roster.sort  #=> [[7, [name, name]], [9, [name, name]]]
+    sorted_array.each do |element|
+      @roster[element[0]] = element[1].sort
+    end
+    @roster
     
   end
 end# code here!

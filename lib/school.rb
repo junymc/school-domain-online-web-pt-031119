@@ -39,7 +39,7 @@ class School
   def sort
     @roster.values.map do |array|
       array.map do |names|
-        array.sort
+        array.sort!
       end
     end
     @roster
